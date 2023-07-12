@@ -5,7 +5,7 @@ const app= expres();
 const PORT= 3000;
 
 app.use(expres.json())
-app.use( '/hola' ,v1WorkoutRouter)
+app.use( '/' ,v1WorkoutRouter)
 
 app.listen(PORT,()=>{
     console.log(`Server listen on port ${PORT}`);

@@ -1,15 +1,12 @@
 const express= require("express");
 const router= express.Router();
 
-//const workoutCotrollers= require
+const product= require("./productRoute.js");
+const user = require("./usersRute");
+const venta= require('./ventasRouter')
 
-
-router
-     .get("/",)
-     .get("/:productID",)
-     .post("/",)
-     .patch("/:productID")
-     .delete("/:productID")
-
+router.use('/product', product);
+router.use('/user', user);
+router.use('/venta', venta)
      
 module.exports=router;
